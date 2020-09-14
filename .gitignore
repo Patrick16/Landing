@@ -1,6 +1,7 @@
 .idea/
 node_modules
 build
+path
 npm-debug.log
 ### Windows template
 # Windows thumbnail cache files
