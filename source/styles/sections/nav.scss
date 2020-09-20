@@ -27,11 +27,12 @@
       height: 5px;
       margin-left: 25px;
       border-radius: 50%;
-      background: #424242
+      background: #424242;
     }
-    &:last-child:after
-    {
-      display: none
+
+    &:last-child:after{
+      content: '';
+      display: none;
     }
   }
 }
