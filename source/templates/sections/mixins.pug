@@ -1,0 +1,27 @@
+mixin tittle(tittleHeader, tittleText)
+    .tittle.tittle__with-bottom-line
+        h2.tittle.tittle__header= tittleHeader
+        .tittle__text= tittleText
+
+mixin step(source, num)
+    li.approach__item
+        .approach__image
+            img.approach__picture(src=source alt="picture")
+            .approach__step step
+        .approach__text
+            .approach__tittle='Step '+num+': Heading Here'
+            p.approach__description.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.
+
+mixin about(tittle, className)
+    li.about__item
+        .icon(class = className)
+        h3.about__header= tittle
+        p.about__description.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
