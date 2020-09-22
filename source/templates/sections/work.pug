@@ -1,0 +1,10 @@
+include mixins
+include vars
+section.work
+    .container
+        +tittle('Our Work','We added our featured works below')
+        ul.work__list
+            +work(Facebook, workImg1, true)
+            +work(Landing, workImg2, true)
+            +work(Facebook, workImg3, false)
+            +work(Landing, workImg4, false)

@@ -1,10 +1,10 @@
 include mixins
+include vars
 section.approach
     .container
         +tittle('Our Approach', 'Check Our approaches step by step')
-
         ul.approach__list
-            +step('../images/step-1.jpg',1)
-            +step('../images/step-2.jpg',2)
-            +step('../images/step-3.jpg',3)
-            +step('../images/step-4.jpg',4)
+            +step(stepImg1,1)
+            +step(stepImg2,2)
+            +step(stepImg3,3)
+            +step(stepImg4,4)

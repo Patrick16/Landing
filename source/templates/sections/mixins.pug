@@ -25,3 +25,15 @@ mixin about(tittle, className)
         p.about__description.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+mixin work(description, source, top)
+    if(top)
+        li.work__item.work__item--name
+            .work__name Project Name
+            .work__description=description
+        li.work__item: img.work__picture(src=source alt='picture')
+    else
+        li.work__item: img.work__picture(src=source alt='picture')
+        li.work__item.work__item--name
+            .work__name Project Name
+            .work__description=description
